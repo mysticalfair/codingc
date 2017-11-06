@@ -2,7 +2,7 @@ from pulp import *
 #finds the number of people who like the food and drink choices
 
 def solve:
-    prob=LpProblem9("party", LpMinimize)
+    prob=LpProblem("party", LpMinimize)
 
     fid=open('food.txt', 'r')
     for line in fid:
