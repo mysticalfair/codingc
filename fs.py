@@ -23,7 +23,7 @@ def solve:
     var={}, prices={}, pof={}
     choice=open('people.txt', 'r')
     for i in range(0, len(choice), 3):
-        name, drinks, food = file_list[i], file_list[i+1].split(';'), file_list[i+2].split(';')
+        name, drinks, food = choice[i], choice[i+1].split(';'), choice[i+2].split(';')
         drinkvar=[], foodvar=[]
         for drink in drinks:
             name_drink=name+str(drink)
